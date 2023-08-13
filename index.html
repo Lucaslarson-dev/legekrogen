@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>legekrogen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b59311510e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/app.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="opper-div">
+      <div>
+        <i class="fa-solid fa-truck"></i>
+      </div>
+      <div>
+        <p>Fri fragt ved køb over 499kr</p>
+      </div>
+    </div>
+    <header>
+      <div id="logo">
+        <img src="./assets/legekrogen_logo.png" alt="" />
+      </div>
+      <i class="fa-solid fa-bars" onclick="burgermenu()"></i>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Legetøj</a></li>
+          <li><a href="/index.html">Udtalelser</a></li>
+          <li><a href="/index.html">Kundeklub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-wrapper">
+      <div class="main-wrapper-box">
+        <h1>At lege er at leve</h1>
+        <p>Her hos os har vi et stort udvalg af legetøj i høj kvalitet</p>
+        <a href="/index.html">LÆS MERE > </a>
+      </div>
+    </section>
+
+    <section class="our-toys">
+      <p class="our-toys-tekst">Et udpluk af vores</p>
+      <h2>LEGETØJ</h2>
+      <div class="our-toys-boxadult">
+        <div>
+          <img src="/assets/product1.jpg" alt="" />
+          <div class="under-box">
+            <p>Tiny Republic Play</p>
+            <h4>Tandlægesæt i træ</h4>
+            <h3>849 kr</h3>
+          </div>
+        </div>
+
+        <div>
+          <img src="/assets/product2.jpg" alt="" />
+          <div class="under-box">
+            <p>Kids Concept</p>
+            <h4>Edvin gåvogn</h4>
+            <h3>499 kr</h3>
+          </div>
+        </div>
+
+        <div>
+          <img src="/assets/product3.jpg" alt="" />
+          <div class="under-box">
+            <p>Vilac</p>
+            <h4>Fire på stribe spil</h4>
+            <h3>69,30kr</h3>
+          </div>
+        </div>
+
+        <div>
+          <img src="/assets/product4.jpg" alt="" />
+          <div class="under-box">
+            <p>Tiny Republic Play</p>
+            <h4>isbod i træ</h4>
+            <h3>259 kr</h3>
+          </div>
+        </div>
+      </div>
+      <a href="/index.html">GÅ TIL LEGETØJ > </a>
+    </section>
+
+    <section class="Udtalelser">
+      <h3>Vores kunder</h3>
+      <h2>UDTALER</h2>
+
+      <div class="Udtalelser-boxadult">
+        <div class="Udtalelserbox">
+          <p>
+            “Pakken kom dagen efter jeg bestilte. <br />
+            Der blev jeg positivt overrasket, da der <br />
+            står på deres hjemmeside at <br />
+            leveringstiden er 2-4 hverdage. Og min <br />
+            lille Hugo elsker sin nye træhest.”
+          </p>
+          <h4>- Heidi, mor til Hugo på 3 år</h4>
+        </div>
+
+        <div class="Udtalelserbox">
+          <p>
+            “Efter min gode ven Lars tippede mig <br />
+            om Legekrogen.dk, har jeg ikke <br />
+            længere problemer med at købe de <br />
+            perfekte julegaver. Tak til Legekrogen. <br />
+            Og Lars”
+          </p>
+          <h4>- Karsten Hansen, Morfar</h4>
+        </div>
+
+        <div class="Udtalelserbox">
+          <p>
+            “Jeg fik varen tilsendt i den forkerte <br />
+            farve, men da jeg kontaktede <br />
+            Legekrogens kundeservice, var de <br />
+            meget hurtige til at sende mig den <br />
+            rigtige farve. Jeg fik endda en gratis <br />
+            slikpose med. Det var meget lækkert”
+          </p>
+          <h4>- Omar, onkel til Anton på 11 år</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="Kundeklub">
+      <div class="Kundeklub-box">
+        <p>
+          Kunne du også tænke dig at blive <br />
+          medlem af vores
+        </p>
+        <h2>Kundeklub?</h2>
+        <form action="/" id="formm" method="get" onsubmit="return(validate())">
+          <div class="error-message"><h4>Fix following errors</h4></div>
+          <div class="ved-siden-af-4">
+            <div class="venstre-side-4">
+              <input
+                type="text"
+                name="navn"
+                id="navn"
+                placeholder="Fulde navn"
+              />
+              <br />
+              <input
+                type="email"
+                name="E-mail"
+                id="E-mail"
+                placeholder="Email "
+              />
+            </div>
+
+            <div class="hojre-side-4">
+              <textarea
+                name="textarea"
+                id="textarea"
+                placeholder="Hvem køber du legetøj til?"
+                cols="79"
+                rows="11"
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit" value="Send">BLIV MEDLEM NU!</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="Kundeservice">
+      <div class="Kundeservice-boxadult">
+        <div class="left-side">
+          <h2>Kundeservice</h2>
+          <div class="small-adult">
+            <div><i class="fa-regular fa-envelope"></i></div>
+            <div>kontakt@legehjørnet.dk</div>
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div><p>+45 23 45 67 89</p></div>
+          </div>
+        </div>
+
+        <div class="the-middle">
+          <h2>Følg os</h2>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <img src="/assets/legekrogen_logo.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
